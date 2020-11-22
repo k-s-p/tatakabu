@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".janActivity">
+
+    <ImageButton
+        android:id="@+id/gu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/choki"
+        app:layout_constraintEnd_toStartOf="@+id/choki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/choki"
+        app:srcCompat="@drawable/gu" />
+
+    <ImageButton
+        android:id="@+id/choki"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pa"
+        app:layout_constraintStart_toEndOf="@+id/gu"
+        app:layout_constraintTop_toBottomOf="@+id/me"
+        app:srcCompat="@drawable/choki" />
+
+    <ImageButton
+        android:id="@+id/pa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/choki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/choki"
+        app:layout_constraintTop_toTopOf="@+id/choki"
+        app:srcCompat="@drawable/pa" />
+
+    <ImageView
+        android:id="@+id/me"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintBottom_toTopOf="@+id/choki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:srcCompat="@drawable/nothing" />
+
+    <ImageView
+        android:id="@+id/enemy"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginTop="69dp"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nothing" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:text="じゃんけん"
+        app:layout_constraintBottom_toTopOf="@+id/me"
+        app:layout_constraintStart_toStartOf="@+id/me"
+        app:layout_constraintTop_toBottomOf="@+id/enemy" />
+
+    <ImageView
+        android:id="@+id/enemyhp"
+        android:layout_width="135dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/enehp3" />
+
+    <ImageView
+        android:id="@+id/mehp"
+        android:layout_width="135dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663"
+        app:srcCompat="@drawable/mehp3" />
+
+
+</android.support.constraint.ConstraintLayout>
